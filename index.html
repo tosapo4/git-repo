@@ -28,5 +28,14 @@
 	</div>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/money2word.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#buttonWord').on('click', function() {
+				var money = $('#textMoney').val();
+				$('#spanWord').text(MoneyToWord.execute(money));
+			});
+		});
+	</script>
 </body>
 </html>
